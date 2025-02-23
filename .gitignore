@@ -30,7 +30,7 @@ wheels/
 .conda
 
 # Data and models (customize based on needs)
-data/
+# data/
 *.h5
 *.pkl
 *.pth
