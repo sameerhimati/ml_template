@@ -1,0 +1,32 @@
+name: PROJECT_NAME  # Will be replaced by project_setup.py
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Core Python
+  - python=3.12
+  - pip
+
+  # Scientific Computing
+  - numpy
+  - pandas
+  # - scikit-learn
+  
+  # Machine Learning
+  # - tensorflow
+  # - pytorch
+
+  # Data Visualization
+  - matplotlib
+
+  # Jupyter
+  - jupyter
+  # - ipykernel
+
+  # Development Tools (via pip for latest versions)
+  - pip:
+    - black  # code formatting
+    - flake8  # code linting
+    - pytest  # testing
