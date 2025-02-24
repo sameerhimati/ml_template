@@ -2,9 +2,7 @@
 
 A minimal, extensible template for machine learning projects.
 
-## Usage Options
-
-### Option 1: Use as a GitHub Template
+## Getting Started
 
 1. Click the "Use this template" button at the top of this repository
 2. Name your new project and create repository
@@ -12,25 +10,17 @@ A minimal, extensible template for machine learning projects.
 4. Set up your environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate
+   source venv/bin/activate  # On Unix/macOS
+   # or
+   venv\Scripts\activate  # On Windows
+   
    pip install -r requirements.txt
    ```
-
-### Option 2: Install as a package
-1. Install from GitHub:
-   ```bash
-   pip install git+https://github.com/sameerhimati/ml-template.git
-   ```
-2. Create a new project:
-   ```bash
-   create-ml-project my-new-project
-   ```
-
 
 ## Project Structure
 
 ```
-ml_template/
+project_name/
 ├── .github/                      # GitHub Actions workflows, PR templates
 │   └── workflows/               # CI/CD pipeline definitions
 ├── configs/                     # Configuration files
@@ -64,9 +54,7 @@ ml_template/
 │   └── test_models.py
 ├── .gitignore               # Git ignore file
 ├── README.md               # Project documentation
-├── environment.yml         # Conda environment definition
-├── setup.py               # Package installation
-└── requirements.txt       # Dependencies for deployment
+└── requirements.txt       # Dependencies for pip
 ```
 
 ## Usage
@@ -93,7 +81,13 @@ ml_template/
 
 ## Dependencies
 
-This project uses conda for dependency management. See `environment.yml` for the full list of dependencies.
+This project uses pip and requirements.txt for dependency management. Key dependencies include:
+- numpy
+- pandas
+- scikit-learn
+- matplotlib
+- pytest
+- black
 
 ## Contributing
 
