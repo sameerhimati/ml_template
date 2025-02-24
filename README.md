@@ -2,17 +2,29 @@
 
 A minimal, extensible template for machine learning projects.
 
-## Option 1: Install as a package
-```bash
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Unix/macOS
+## Usage Options
 
-# Install from GitHub
-pip install git+https://github.com/sameerhimati/ml-template.git
+### Option 1: Use as a GitHub Template
 
-# Create a new project
-activate-project my-new-project
+1. Click the "Use this template" button at the top of this repository
+2. Name your new project and create repository
+3. Clone your new repository
+4. Set up your environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+### Option 2: Install as a package
+1. Install from GitHub:
+   ```bash
+   pip install git+https://github.com/sameerhimati/ml-template.git
+   ```
+2. Create a new project:
+   ```bash
+   create-ml-project my-new-project
+   ```
 
 
 ## Project Structure

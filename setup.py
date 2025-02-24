@@ -3,12 +3,12 @@ from setuptools import setup
 setup(
     name="ml-template",
     version="0.1",
-    description="AI/ML project template generator",
-    author="Your Name",
+    description="ML project template generator",
+    author="Sameer Himati",
     py_modules=["project_setup"],
     entry_points={
         'console_scripts': [
-            'activate-project=project_setup:setup_project',
+            'create-ml-project=project_setup:setup_project',  
         ],
     },
     include_package_data=True,
