@@ -65,22 +65,10 @@ def setup_project(project_name=None, template_dir=None):
         init_file.touch()
     
     # Copy template files
-    for filename in [".gitignore", "environment.yml", "README.md"]:
+    for filename in [".gitignore", "requirements.txt", "README.md"]:
         source = Path(template_dir) / filename
         if source.exists():
             shutil.copy(source, project_dir)
-    
-    # Update environment.yml
-    env_file = project_dir / "environment.yml"
-    if env_file.exists():
-        with env_file.open('r') as f:
-            content = f.read()
-        
-        # Replace environment name
-        content = re.sub(r'name: .*', f'name: {project_name}', content)
-        
-        with env_file.open('w') as f:
-            f.write(content)
     
     # Update README.md
     readme_file = project_dir / "README.md"
@@ -97,8 +85,9 @@ def setup_project(project_name=None, template_dir=None):
     print(f"\nProject {project_name} created successfully!")
     print("\nNext steps:")
     print(f"1. cd {project_name}")
-    print(f"2. conda env create -f environment.yml")
-    print(f"3. conda activate {project_name}")
+    print(f"2. python -m venv .venv")
+    print(f"3. source .venv/bin/activate  # On Unix/macOS")
+    print(f"4. pip install -r requirements.txt")
 
 if __name__ == "__main__":
     setup_project()
