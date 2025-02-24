@@ -1,19 +1,19 @@
-# PROJECT_NAME
+# ML Project Template
 
 A minimal, extensible template for machine learning projects.
 
-
-## Setup
-
-1. Create conda environment:
+## Option 1: Install as a package
 ```bash
-conda env create -f environment.yml
-```
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Unix/macOS
 
-2. Activate environment:
-```bash
-conda activate PROJECT_NAME
-```
+# Install from GitHub
+pip install git+https://github.com/sameerhimati/ml-template.git
+
+# Create a new project
+activate-project my-new-project
+
 
 ## Project Structure
 

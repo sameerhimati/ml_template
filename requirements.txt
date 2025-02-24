@@ -1,0 +1,15 @@
+# Core Python libraries
+numpy
+pandas
+# scikit-learn
+
+# Development tools
+black
+flake8
+pytest
+
+# Add additional dependencies as needed:
+# tensorflow
+# torch
+# pytorch
+# matplotlib
